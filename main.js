@@ -1,6 +1,4 @@
-const triggers = document.querySelectorAll('ul > li');
-const background = document.querySelector('.dropdownBackground');
-const nav = document.querySelector('nav');
+const triggers = document.querySelectorAll('li');
 
 function handleEnter() {
     console.log('enter');
