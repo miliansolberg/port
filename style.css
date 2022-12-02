@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+ /* padding: 0;
+  margin: 0;
+  border: 1px solid red; */
+}
+
 :root {
     --main: #163333;
   }  
@@ -64,7 +71,7 @@ nav {
     top: 300px;
     right: 0;
     bottom: 0;
-    animation: mymove1 1s ease-in-out;
+    animation: mymove1 800ms cubic-bezier(0, 1.89, 0.95, 1.17);
   }
 
   @keyframes mymove1 {
@@ -93,8 +100,7 @@ nav {
 
   .offer {
     font-size: 26px;
-    animation: rightslide 1s ease-in-out;
-    animation-fill-mode: forwards;
+    animation: rightslide 1s cubic-bezier(1,-0.02, 0, 0.95) forwards;
   }
 
   @keyframes rightslide {
