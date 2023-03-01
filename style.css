@@ -19,6 +19,8 @@
     color: white;
     font-family: geomanist;
     height: 100vh;
+    scroll-behavior: smooth;
+    scroll-padding: 200px;
   }
 
   .container {
@@ -45,6 +47,11 @@ nav {
     color: white;
 }
 
+.wave {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+}
   nav ul li {
     display: inline-block;
     padding: 12px;
@@ -95,12 +102,12 @@ nav {
 
   .introduction {
     padding-top: 10rem;
-    padding-left: 24rem;
   }
 
   .offer {
     font-size: 26px;
     animation: rightslide 1s cubic-bezier(1,-0.02, 0, 0.95) forwards;
+    position: relative;
 
   }
 
@@ -152,16 +159,38 @@ transition: .3s;
   }
 
   @media screen and (max-width: 768px) {
-
-    nav {
-      flex-direction: column;
+    .introimage {
+      width: 60%;
+      height: 60%;
+      } 
     }
   
-    @media screen and (max-width: 1200px) {
-  
-      nav {
-        flex-direction: column;
+    @media screen and (max-width: 1024px) {
+      .introimage {
+        width: 200px;
+        height: 300px;
+      } 
+    }
+
+    @media only screen and (max-width: 1024px) {
+      body, h1, h2 {
+        font-size: 0.9rem;
+        }
       }
+
+      @media only screen and (max-width: 1200px) {
+        .introimage {
+          width: 400px;
+          height: 300px;
+        }
+      }
+
+      @media only screen and (max-width: 1200px) {
+        body {
+          font-size: 0.8rem;
+          }
+        }
+      
   
   
 
